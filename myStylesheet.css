@@ -1,0 +1,205 @@
+body{
+    background: #b9ddb3 ;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(87, 42, 6);
+    margin: 0;
+}
+#wrapper{
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: radial-gradient(ellipse at bottom, rgba(172, 216, 236, 1) 0%, rgb(168 146 122) 45%, rgb(215 222 180) 86%, rgb(204 233 213 / 97%) 100%);
+}
+#myHeader{
+    height: 3vh;
+    width: 100%;
+    margin: 0;
+    z-index: 10;
+}
+
+#dodder img{
+    width: 50%;
+}
+
+#bio{
+    border: 1px solid rgb(87, 42, 6);
+    padding: 1%;
+    margin: 0 0 2% 0;
+}
+
+#mainCont{
+    position: relative;
+    margin: 2% 15% 2% 15%;
+    font-size: 1.2rem;
+}
+#intro-photo{
+    padding: 5%;
+    width: 40%;
+}
+#intro-photo img{
+    width: 100%;
+    height: auto;
+}
+#main{
+    margin: 0 7.5%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 4%;
+    /* background-color: #68626276; */
+    width: 85%;
+    border-radius: 10px;
+}
+
+
+
+@keyframes disappear{
+    0%, 100%{
+        opacity: 0;
+    }
+    35%{
+        opacity: .6;
+    }
+    50%{
+        opacity: 1.;
+    }
+    70%{
+        opacity: .6;
+    }
+  }
+
+#projects, #inspiration{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0 3%;
+}
+#inspiration{
+    display: none;
+}
+
+
+#inspKey:hover, #projKey:hover{
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.insp:hover{
+    animation: bgProj 1s forwards;
+}
+.project, .insp{
+    width: 86%;
+    margin: 3% 5%;
+    flex: 1 1 auto;
+    padding: 1% 2%;
+    /* border-radius: 50px; */
+    overflow: hidden;
+    border: 1px solid rgba(87, 42, 6, 0.3);;
+}
+
+#bio p{
+    display: flex;
+    justify-content: space-between;
+}
+
+#symbioticai img, #algoclub img{
+    width:60%;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.client{
+    font-weight: 100 !important;
+
+}
+
+.project:hover{
+    animation: bgProj 1s forwards;
+}
+
+@keyframes bgProj{
+    0%{
+        background: rgba(164, 163, 163, .0);
+        box-shadow: 0 0 5px 5px rgba(164, 163, 163, .75), -30px 10px 5px 5px rgba(164, 163, 163, .0);
+    }
+    100%{
+        background: rgba(164, 163, 163, .75);
+        box-shadow: 0 0 5px 5px rgba(164, 163, 163, .75), -30px 10px 5px 5px rgba(164, 163, 163, .35);
+    }
+  }
+
+
+
+h3{
+    font-size: 1.3rem;
+}
+
+.textHighlight{
+    text-decoration: wavy underline rgb(103, 129, 235);
+}
+
+a{
+    color: rgb(0 24 123);
+}
+
+#key{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.selected{
+    background-color: green;
+}
+
+.selected{
+    opacity: 0.6;
+    background-color: rgb(0 0 0);
+    color: wheat;
+}
+
+.blob{
+    height: 15vh;
+    width: auto;
+}
+.key-item{
+    padding: 0 1%;
+    border: 1px solid rgb(87, 42, 6);
+}
+
+.key-item h3{
+    font-weight: 100;
+}
+
+#projects-header{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 100;
+    padding: 2%;
+    margin: 0 15%;
+}
+
+.date{
+    color: rgb(69, 69, 70);
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.title{
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+.technologies{
+    color: rgb(232, 220, 199);
+    background-color: rgb(69, 69, 70);
+    padding: 0 1%;
+    margin: 2% 0;
+}
